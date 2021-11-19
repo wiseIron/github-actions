@@ -2,3 +2,4 @@ node_modules
 screenshots
 examples/*/cypress/logs
 examples/*/cypress/downloads
+cypress/videos

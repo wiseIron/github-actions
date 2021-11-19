@@ -13,7 +13,7 @@ context('Login form tests', () => {
 		cy.contains('Login').click()
 
 		//Assert
-		cy.contains('Please enter tracking number').should('be.visible')
+		cy.contains('user has been locked by system').should('be.visible')
 	})
 
 	//Similar function could be exstracted to be reused in different test cases. Depends of project structure.

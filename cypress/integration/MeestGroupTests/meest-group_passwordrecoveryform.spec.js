@@ -10,10 +10,10 @@ context('Password recovery form tests', () => {
 
 		//Act
 		cy.get('.popupContent input[type=text]').type(email)
-		cy.get('.popupContent').contains('Ok').click()
+		// cy.get('.popupContent').contains('Ok').click()
 
 		//Assert
-		cy.get('#gwt-uid-12')
-			.should('have.text', `You will receive email: ${email} with recovery password instruction`)
+		cy.get('small')
+			.contains('Repair Password')
 	})
 })
